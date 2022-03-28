@@ -1,18 +1,14 @@
-var readline = require("readline");
+var input = require("fs").readFileSync("stdin", "utf8");
+var lines = input.split("\n");
 
-var rl = readline.createInterface({
-        input: process.stdin,
-        output: process.stdout
-    });
+/* Solução Uri */
 
-var A = rl.question('');
-var B = rl.question('');
+var A = parseInt(lines.shift());
+var B = parseInt(lines.shift());
 
-var X = parseInt(A) + parseInt(B)
+var X = A + B;
 
-console.log("X = ", X)
-
-
+console.log("X = " + X);
 
 
 
