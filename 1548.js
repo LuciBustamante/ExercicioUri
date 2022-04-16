@@ -8,7 +8,7 @@ let N = lines.shift();   // qtd de casos
 let i = 0;
 
 while (i < N) {
-  
+
   let M = lines.shift();   // qtd de alunos
   let P = (lines.shift()).split(" ");   // notas
   
@@ -23,7 +23,7 @@ while (i < N) {
 
   // verifica se: qtd de aluno == notas digitadas 
   if(M != notes.length) {
-    break
+    break;
   }
   else {
     let listOrd = [];
@@ -32,7 +32,7 @@ while (i < N) {
       listOrd.push(item);
     })
 
-    listOrd.sort((a, b) => b - a)  // organiza em forma decresc
+    listOrd.sort((a, b) => b - a);  // organiza em forma decresc
     
     listOrd.forEach((nt) => {
       if( nt == notes[x]) {
