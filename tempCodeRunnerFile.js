@@ -1,1 +1,0 @@
-salary + (sale * 0.15)
